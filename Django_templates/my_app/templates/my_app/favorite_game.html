@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my favorite game</title>
+</head>
+<body>
+    <hr>
+    <h2><b>my favorite game :</b> </h2>
+    {% for game in favoritegame %}
+    <li>
+        {{game}}
+    </li>
+    {% endfor %}
+    <hr>
+</body>
+</html>
