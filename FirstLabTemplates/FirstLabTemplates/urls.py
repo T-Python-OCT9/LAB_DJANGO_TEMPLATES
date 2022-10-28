@@ -19,5 +19,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include("Today.urls")),
-    path('favs/',include("game.urls"))
+    path('favs/',include("game.urls")),
+    path('random/',include("generatedPassword.urls"))
 ]
