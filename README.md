@@ -3,7 +3,7 @@
 
 # Create a new website using Django . Your website should have the following paths :
 ### today/
-  This should display the date of today .
+  This should display the   .
   
 ### random/password/
   This should display a randomly generated password . 
