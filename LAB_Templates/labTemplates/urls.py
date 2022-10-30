@@ -7,7 +7,6 @@ urlpatterns = [
     path("today/", views.today_date, name = "TodayDate"),
     path("random/password/", views.Pass_generate, name = "Password"),
     path("favs/games/", views.fave_games, name = "Games")
-
     
  
 ]

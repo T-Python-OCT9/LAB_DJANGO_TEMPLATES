@@ -3,7 +3,7 @@ from django.shortcuts import render
 import datetime 
 import secrets
 from django.http import HttpRequest, HttpResponse
-
+import random
 
 def today_date(request : HttpRequest): 
    context = {"today_date" :datetime.date.today(), "Current_time" : datetime.datetime.now()}
@@ -16,6 +16,16 @@ def Pass_generate(request : HttpRequest):
   random_pass = secrets.token_urlsafe(password_length)
   context = {"random_password" : random_pass}
   return render (request , "lab/pass.html" , context) 
+
+
+#def Password_generate(request : HttpRequest):
+
+ # random_pass = random.choices("QWERTYUIOPLKJHGFDFGNM<NBVC" , k=15)
+  #random_pass = "".join(rans)
+  #context = {"random_password" : random_pass}
+  #return render (request , "lab/pass.html" , context) 
+
+
 
 def fave_games(request : HttpRequest):
     context = {"Favorite_Games" :  ["hi_Day" , "minecraft", "escape"]}
