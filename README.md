@@ -1,16 +1,4 @@
-# LAB_DJANGO_TEMPLATES
-
-
-# Create a new website using Django . Your website should have the following paths :
-### today/
-  This should display the   .
-  
-### random/password/
-  This should display a randomly generated password . 
-  
-### favs/games/
-   This should display a list of your favorite games.
-  
-
-
-### Make sure to use templates for each of the above paths . 
+# 
+Create a base.html template
+Let other templates inherit from base.html
+Use Bootstrap to style it (add navigation bar)
