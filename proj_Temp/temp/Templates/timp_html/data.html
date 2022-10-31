@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            today
-        </title>
-    </head>
-    <body>
-        Today's Date is
-        <h2>{{todayDate}}</h2>
-    </body>
-</html>
+{% extends 'timp_html/base.html' %}
+
+
+    
+        {% block title %}
+         the Date
+        {% endblock %}
+            
+        
+        {%block content%}
+        the date today is :
+        {{todayDate}}
+        {% endblock %}
+    

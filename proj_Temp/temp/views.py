@@ -1,16 +1,18 @@
 from multiprocessing import context
 from django.shortcuts import render
 from datetime import date
-from random import randint
+import random 
 from django.http import HttpRequest, HttpResponse
-
+import string
 def Datetoday(request : HttpRequest):
     context = {"todayDate": date.today() }
     return render (request , "timp_html/data.html" , context)
+
 def random_pass (request : HttpRequest):
     password = ''
-    for i in range (0,10):
-        password += (randint(0,10))
+    cr = string.ascii_letters+ string.digits
+    for i in range (10):
+        password += random.choice(cr)
     context = {"pass" : password}
     return render (request , "timp_html/Randmnum.html" , context) 
 

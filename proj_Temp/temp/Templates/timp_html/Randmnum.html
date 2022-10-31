@@ -1,4 +1,12 @@
-<h2>Generating random password </h2>
+{% extends 'timp_html/base.html' %}
 
 
-{{pass}}
+
+{% block title %}
+    Random Password
+{% endblock %}
+
+{% block content %}
+    <h1> Generated Password:  {{ pass }}</h1> 
+{% endblock %} 
+   

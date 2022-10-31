@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            myfavegames
-        </title>
-        <body>
-    <div>
-        <h2>
-        My fave games are :  
+{% extends 'timp_html/base.html' %}
+
+{% block title %}
+    mygames
+{% endblock %}
+
+{% block content %}
+<h1 > My fave games are : </h1>
     
         {% for x in Fave_Games %}
-        {{ x }}
-        {% endfor %}
-    
-    
-        </h2>
-    
-        </div>
-    </body>
-</html>
+        
+        {{ x }}   {% endfor %}
+{% endblock %}
