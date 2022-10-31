@@ -1,0 +1,13 @@
+{% extends 'timp_html/base.html' %}
+
+{% block title %}
+    mygames
+{% endblock %}
+
+{% block content %}
+<h1 > My fave games are : </h1>
+    
+        {% for x in Fave_Games %}
+        
+        {{ x }}   {% endfor %}
+{% endblock %}
