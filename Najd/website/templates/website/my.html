@@ -1,17 +1,24 @@
+{% extends 'website/base.html' %}
+{% block content %}
+
 <style>
     * {
-        background-color: rgb(223, 212, 188);
-        
+   
         color: rgb(65, 25, 25);
         text-align: center;
     }
+    
             </style>
 
-
-   
-
-
-
+<style>
+    #rcorners1 {
+border-radius: 25px;
+background: #73AD21;
+padding: 20px; 
+width: 200px;
+height: 150px;  
+}
+</style>
 <h1>
    Today date is :{{date}}
    
@@ -19,7 +26,7 @@
 </h1>
 
 <h2>
-    Your new generated password is {{password}}
+    Your new generated password is {{pass}}
 </h2>
  
 
@@ -29,6 +36,5 @@
 {% for game in favorite_games %}
 {{favorite_games }}
 
-<h3 style="margin-right: 5px;"></h3>
-
 {% endfor %}
+{% endblock %}
